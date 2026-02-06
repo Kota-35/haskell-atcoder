@@ -1,0 +1,14 @@
+cradle:
+  multi:
+    - path: "./app"
+      config:
+        cradle:
+          cabal:
+            component: "haskell-atcoder:exe:haskell-atcoder"
+    - path: "./contests"
+      config:
+        cradle:
+          direct:
+            arguments:
+              - -i./contests
+              - -Wall

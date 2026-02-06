@@ -1,0 +1,11 @@
+{
+  "lsp": {
+    "hls": {
+      "initialization_options": {
+        "haskell": {
+          "formattingProvider": "fourmolu",
+        },
+      },
+    },
+  },
+}
