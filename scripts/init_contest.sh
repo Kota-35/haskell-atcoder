@@ -28,15 +28,10 @@ for p in "${problems[@]}"; do
     cat > "$main_file" <<'HS'
 module Main where
 
-import Data.Char (isSpace)
-
 main :: IO ()
 main = do
-  input <- getContents
-  putStrLn (trimEnd input)
-
-trimEnd :: String -> String
-trimEnd = reverse . dropWhile isSpace . reverse
+    [n, k] <- map read . words <$> getLine :: IO [Int]
+    ps <- map read . words <$> getLine :: IO [Int]
 HS
   fi
 
