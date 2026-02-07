@@ -1,2 +1,4 @@
 #!/usr/bin/env bash
-fourmolu -i contests
+set -euo pipefail
+
+cabal exec -- fourmolu -i contests

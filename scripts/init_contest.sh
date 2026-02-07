@@ -30,8 +30,10 @@ module Main where
 
 main :: IO ()
 main = do
-    [n, k] <- map read . words <$> getLine :: IO [Int]
-    ps <- map read . words <$> getLine :: IO [Int]
+    -- Example:
+    -- [n, k] <- map read . words <$> getLine :: IO [Int]
+    -- ps <- map read . words <$> getLine :: IO [Int]
+    pure ()
 HS
   fi
 

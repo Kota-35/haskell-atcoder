@@ -21,7 +21,7 @@ mkdir -p .atcoder-bin
 
 exe=".atcoder-bin/run"
 
-if ! ghc -O2 -outputdir .atcoder-bin -o "$exe" "$main_file" >/dev/null; then
+if ! cabal exec -- ghc -O2 -outputdir .atcoder-bin -o "$exe" "$main_file" >/dev/null; then
   echo "Compilation failed." >&2
   exit 1
 fi
